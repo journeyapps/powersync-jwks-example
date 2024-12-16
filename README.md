@@ -30,6 +30,7 @@ Run the first two `supabase secrets set` commands in the output to configure the
 ## 2. Deploy the functions
 
 ```sh
+supabase init
 supabase functions deploy --no-verify-jwt powersync-jwks
 # Deploy one or both of these, depending on whether signed-in and/or anonymous users should be allowed.
 supabase functions deploy powersync-auth
